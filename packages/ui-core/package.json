@@ -1,0 +1,36 @@
+{
+  "name": "@shopkit/ui-core",
+  "version": "0.1.0",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*/index.ts"
+  },
+  "scripts": {
+    "lint": "eslint . --max-warnings 0",
+    "generate:component": "cd ../ui-generator && yarn generate",
+    "check-types": "tsc --noEmit",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "devDependencies": {
+    "@shopkit/eslint-config": "*",
+    "@shopkit/typescript-config": "*",
+    "@types/node": "^22.15.3",
+    "@types/react": "19.1.0",
+    "@types/react-dom": "19.1.1",
+    "eslint": "^9.34.0",
+    "typescript": "5.9.2"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^7.3.4",
+    "@mui/material": "^7.3.4",
+    "@mui/system": "^7.3.3",
+    "@shopkit/ui-theme": "*",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}
