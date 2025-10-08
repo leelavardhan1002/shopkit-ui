@@ -4,7 +4,7 @@ import React from "react";
 
 export const renderWithTheme = (component: React.ReactElement) => {
     return render(
-        <ShopKitThemeProvider themeOverrides={}>
+        <ShopKitThemeProvider>
             {component}
         </ShopKitThemeProvider>
     );
