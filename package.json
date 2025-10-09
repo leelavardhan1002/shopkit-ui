@@ -14,13 +14,15 @@
     "test": "cd packages/ui-core && jest --coverage"
   },
   "devDependencies": {
-    "@types/jest": "^29.5.12",
-    "@testing-library/react": "^16.1.0",
+    "@playwright/test": "^1.56.0",
     "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.1.0",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^24.7.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
-    "ts-jest": "^29.2.5",
     "prettier": "^3.6.2",
+    "ts-jest": "^29.2.5",
     "turbo": "^2.5.8",
     "typescript": "5.9.2"
   },
@@ -33,5 +35,8 @@
     "packages/*",
     "packages/ui-core",
     "packages/ui-theme"
-  ]
+  ],
+  "dependencies": {
+    "playwright": "^1.56.0"
+  }
 }
