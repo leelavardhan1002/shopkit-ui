@@ -18,7 +18,21 @@ export const config = [
       turbo: turboPlugin,
     },
     rules: {
-      "turbo/no-undeclared-env-vars": "warn",
+      "turbo/no-undeclared-env-vars": "error",
+      // TypeScript
+      "@typescript-eslint/no-explicit-any": "error",
+      "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+      "@typescript-eslint/explicit-function-return-type": "off",
+      "@typescript-eslint/no-non-null-assertion": "error",
+      // Code Quality
+      "no-console": ["error", { "allow": ["warn", "error"] }],
+      "no-debugger": "error",
+      "no-alert": "error",
+      "eqeqeq": ["error", "always"],
+      "no-var": "error",
+      "prefer-const": "error",
+      "prefer-arrow-callback": "error",
+      "no-duplicate-imports": "error",
     },
   },
   {
@@ -27,6 +41,6 @@ export const config = [
     },
   },
   {
-    ignores: ["dist/**"],
+    ignores: ["dist/**", "coverage/**"],
   },
 ];
