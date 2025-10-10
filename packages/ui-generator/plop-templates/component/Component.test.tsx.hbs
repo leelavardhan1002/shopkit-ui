@@ -1,0 +1,16 @@
+import { {{pascalCase componentName}} } from './{{pascalCase componentName}}';
+import { renderWithTheme } from '../utils/testUtils/renderWithThemeAndProps';
+import { {{pascalCase componentName}}Props } from './types';
+
+const defaultProps: Partial<{{pascalCase componentName}}Props> = {};
+
+const setupElement = (props: {{pascalCase componentName}}Props) => {
+    return renderWithTheme(<{{pascalCase componentName}} {...props} />);
+}
+
+describe('{{pascalCase componentName}}', () => {
+    it('matches snapshot', () => {
+        const { asFragment } = setupElement(defaultProps);
+        expect(asFragment()).toMatchSnapshot();
+    });
+});
