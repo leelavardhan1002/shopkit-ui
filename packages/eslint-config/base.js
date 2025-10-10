@@ -25,7 +25,7 @@ export const config = [
       "@typescript-eslint/explicit-function-return-type": "off",
       "@typescript-eslint/no-non-null-assertion": "error",
       // Code Quality
-      "no-console": ["error", { "allow": ["warn", "error"] }],
+      "no-console": ["error", { "allow": ["warn", "error", 'log'] }],
       "no-debugger": "error",
       "no-alert": "error",
       "eqeqeq": ["error", "always"],

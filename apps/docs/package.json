@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "storybook dev -p 6006",
-    "build": "storybook build",
+    "build": "node scripts/build.js",
+    "deploy": "node scripts/publish.js",
     "lint": "eslint .",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
@@ -20,6 +21,7 @@
     "@storybook/react-vite": "9.1.10",
     "@types/node": "^24.6.0",
     "eslint": "^9.36.0",
+    "gh-pages": "latest",
     "storybook": "9.1.10",
     "typescript": "~5.9.3",
     "vitest": "^3.2.4",
