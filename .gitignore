@@ -38,4 +38,8 @@ yarn-error.log*
 *.pem
 
 *storybook.log
-# storybook-static - Uncomment to ignore, comment to commit for GitHub Pages
+storybook-static
+
+# SonarQube
+.scannerwork/
+.sonar/

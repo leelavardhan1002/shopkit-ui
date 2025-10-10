@@ -6,7 +6,7 @@
       "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
       "outputs": [".next/**", "!.next/cache/**"],
-      "env": ["BRANCH_NAME", "CHANGE_BRANCH", "USERNAME", "EMAIL"]
+      "env": ["BRANCH_NAME", "CHANGE_BRANCH", "USERNAME", "EMAIL", "SONAR_TOKEN"]
     },
     "lint": {
       "dependsOn": ["^lint"]
