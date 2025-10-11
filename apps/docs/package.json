@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "storybook dev -p 6006",
-    "build": "storybook build",
+    "build": "node scripts/build.js",
+    "deploy": "node scripts/publish.js",
     "lint": "eslint .",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
@@ -13,21 +14,16 @@
   "dependencies": {},
   "devDependencies": {
     "@chromatic-com/storybook": "4.1.1",
-    "@eslint/js": "^9.36.0",
+    "@shopkit/eslint-config": "*",
     "@storybook/addon-a11y": "9.1.10",
     "@storybook/addon-docs": "9.1.10",
     "@storybook/addon-vitest": "9.1.10",
     "@storybook/react-vite": "9.1.10",
     "@types/node": "^24.6.0",
-
     "eslint": "^9.36.0",
-
-    "eslint-plugin-storybook": "9.1.10",
-    "globals": "^16.4.0",
+    "gh-pages": "latest",
     "storybook": "9.1.10",
     "typescript": "~5.9.3",
-    "typescript-eslint": "^8.45.0",
-
     "vitest": "^3.2.4",
     "@vitest/browser": "^3.2.4",
     "playwright": "^1.56.0",

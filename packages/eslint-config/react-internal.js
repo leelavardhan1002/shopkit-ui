@@ -32,8 +32,22 @@ export const config = [
     settings: { react: { version: "detect" } },
     rules: {
       ...pluginReactHooks.configs.recommended.rules,
-      // React scope no longer necessary with new JSX transform.
+      // React
       "react/react-in-jsx-scope": "off",
+      "react/prop-types": "off",
+      "react/jsx-no-target-blank": "error",
+      "react/jsx-key": "error",
+      "react/no-array-index-key": "warn",
+      "react/self-closing-comp": "error",
+      // React Hooks
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn",
+    },
+  },
+  {
+    files: ["**/*.config.{js,cjs,mjs}", "**/jest.config.js"],
+    languageOptions: {
+      globals: globals.node,
     },
   },
 ];
