@@ -1,4 +1,5 @@
 module.exports = {
+  ignores: [(message) => /^Merge/.test(message)],
   rules: {
     // Type rules
     'type-enum': [

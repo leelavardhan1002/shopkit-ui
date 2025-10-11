@@ -4,12 +4,20 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsup src/index.ts --dts"
+    "build": "tsup src/index.ts --dts",
+    "lint": "eslint . --max-warnings 0",
+    "check-types": "tsc --noEmit"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mui/material": "^7.3.4",
     "@mui/system": "^7.3.3"
+  },
+  "devDependencies": {
+    "@shopkit/eslint-config": "*",
+    "@shopkit/typescript-config": "*",
+    "eslint": "^9.34.0",
+    "typescript": "5.9.2"
   }
 }
