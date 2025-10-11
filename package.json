@@ -11,7 +11,10 @@
     "storybook": "cd apps/docs && yarn storybook",
     "build-storybook": "cd apps/docs && yarn build-storybook",
     "test:watch": "cd packages/ui-core && jest --watch",
-    "test": "cd packages/ui-core && jest --coverage"
+    "test": "cd packages/ui-core && jest --coverage",
+    "release": "lerna publish",
+    "release:ci": "lerna publish --yes --conventional-commits",
+    "version": "lerna version --conventional-commits"
   },
   "devDependencies": {
     "@types/jest": "^29.5.12",
@@ -22,7 +25,15 @@
     "ts-jest": "^29.2.5",
     "prettier": "^3.6.2",
     "turbo": "^2.5.8",
-    "typescript": "5.9.2"
+    "typescript": "5.9.2",
+    "lerna": "^8.1.2",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^11.1.0",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^9.2.6",
+    "@semantic-release/npm": "^11.0.2",
+    "@semantic-release/release-notes-generator": "^12.1.0",
+    "semantic-release": "^23.0.0"
   },
   "engines": {
     "node": ">=18"

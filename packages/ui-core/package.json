@@ -1,7 +1,11 @@
 {
   "name": "@shopkit/ui-core",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "exports": {
     ".": "./src/index.ts",
     "./*": "./src/*/index.ts"

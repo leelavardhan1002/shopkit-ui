@@ -1,0 +1,15 @@
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+*.stories.tsx
+.turbo
+.storybook
+coverage
+node_modules
+.env
+.env.*
+tsconfig.json
+jest.config.js
+.eslintrc
+.prettierrc
