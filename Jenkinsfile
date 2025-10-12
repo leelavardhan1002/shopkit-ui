@@ -3,8 +3,8 @@ pipeline {
     
     environment {
         NODE_VERSION = '22'
-        SONAR_TOKEN = credentials('sonar-token')
-        NPM_TOKEN = credentials('npm-token')
+        SONAR_TOKEN = credentials('sonar_token')
+        NPM_TOKEN = credentials('npm_token')
         CI = 'true'
         NODE_ENV = 'production'
     }
