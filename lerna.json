@@ -5,8 +5,10 @@
   "command": {
     "publish": {
       "conventionalCommits": true,
-      "message": "chore(release): publish",
+      "message": "chore(release): publish alpha",
       "registry": "https://registry.npmjs.org/",
+      "distTag": "alpha",
+      "preid": "alpha",
       "ignoreChanges": ["**/*.md", "**/*.test.ts", "**/*.test.tsx", "**/*.spec.ts"]
     },
     "version": {

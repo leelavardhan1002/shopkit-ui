@@ -65,11 +65,11 @@ pipeline {
             steps { sh 'yarn build-storybook' }
         }
         
-        stage('NPM Release') {
+        stage('NPM Alpha Release') {
             steps {
                 script {
                     sh 'echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc'
-                    sh 'yarn lerna publish --yes --conventional-commits'
+                    sh 'yarn lerna publish --dist-tag alpha --preid alpha --yes --conventional-commits'
                 }
             }
         }
