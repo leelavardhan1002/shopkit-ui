@@ -2,9 +2,11 @@ pipeline {
     agent any
     
     environment {
-        NODE_VERSION = '18'
+        NODE_VERSION = '22'
         SONAR_TOKEN = credentials('sonar-token')
         NPM_TOKEN = credentials('npm-token')
+        CI = 'true'
+        NODE_ENV = 'production'
     }
     
     stages {
@@ -26,19 +28,13 @@ pipeline {
         stage('Build, Lint & Test') {
             parallel {
                 stage('Build') {
-                    steps {
-                        sh 'yarn build'
-                    }
+                    steps { sh 'yarn build' }
                 }
                 stage('Lint') {
-                    steps {
-                        sh 'yarn lint'
-                    }
+                    steps { sh 'yarn lint' }
                 }
                 stage('Unit Test') {
-                    steps {
-                        sh 'yarn test'
-                    }
+                    steps { sh 'yarn test' }
                 }
             }
         }
@@ -66,9 +62,7 @@ pipeline {
         }
         
         stage('Storybook Build') {
-            steps {
-                sh 'yarn build-storybook'
-            }
+            steps { sh 'yarn build-storybook' }
         }
         
         stage('NPM Release') {
@@ -82,9 +76,6 @@ pipeline {
     }
     
     post {
-        always {
-            cleanWs()
-        }
         success {
             echo 'Pipeline completed successfully!'
         }
