@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ColorPicker matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    aria-label="Color picker"
+    class="MuiBox-root css-ve81fp"
+    role="radiogroup"
+  >
+    <div
+      class="MuiBox-root css-u63ya"
+    >
+      <div
+        aria-checked="false"
+        aria-label="Red"
+        class="MuiBox-root css-1woxkw"
+        role="radio"
+        style="opacity: 1; cursor: pointer;"
+        tabindex="0"
+      />
+    </div>
+    <div
+      class="MuiBox-root css-u63ya"
+    >
+      <div
+        aria-checked="false"
+        aria-label="Blue"
+        class="MuiBox-root css-lxe1mo"
+        role="radio"
+        style="opacity: 1; cursor: pointer;"
+        tabindex="-1"
+      />
+    </div>
+    <div
+      class="MuiBox-root css-u63ya"
+    >
+      <div
+        aria-checked="false"
+        aria-label="Green"
+        class="MuiBox-root css-18xtvkq"
+        role="radio"
+        style="opacity: 1; cursor: pointer;"
+        tabindex="-1"
+      />
+    </div>
+    <div
+      class="MuiBox-root css-u63ya"
+    >
+      <div
+        aria-checked="false"
+        aria-label="Yellow"
+        class="MuiBox-root css-b6q2nl"
+        role="radio"
+        style="opacity: 1; cursor: pointer;"
+        tabindex="-1"
+      />
+    </div>
+    <div
+      class="MuiBox-root css-u63ya"
+    >
+      <div
+        aria-checked="false"
+        aria-label="Purple"
+        class="MuiBox-root css-196t0vj"
+        role="radio"
+        style="opacity: 1; cursor: pointer;"
+        tabindex="-1"
+      />
+    </div>
+    <div
+      class="MuiBox-root css-u63ya"
+    >
+      <div
+        aria-checked="false"
+        aria-label="White"
+        class="MuiBox-root css-1okyw7r"
+        role="radio"
+        style="opacity: 1; cursor: pointer;"
+        tabindex="-1"
+      />
+    </div>
+    <div
+      class="MuiBox-root css-u63ya"
+    >
+      <div
+        aria-checked="false"
+        aria-label="Black"
+        class="MuiBox-root css-hlo4lg"
+        role="radio"
+        style="opacity: 1; cursor: pointer;"
+        tabindex="-1"
+      />
+    </div>
+    <div
+      class="MuiBox-root css-u63ya"
+    >
+      <div
+        aria-checked="false"
+        aria-label="Gradient"
+        class="MuiBox-root css-tqw2l8"
+        role="radio"
+        style="opacity: 1; cursor: pointer;"
+        tabindex="-1"
+      />
+    </div>
+    <div
+      class="MuiBox-root css-u63ya"
+    >
+      <div
+        aria-checked="false"
+        aria-label="Image"
+        class="MuiBox-root css-1bd4eux"
+        role="radio"
+        style="opacity: 1; cursor: pointer;"
+        tabindex="-1"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
